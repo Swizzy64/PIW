@@ -1,0 +1,56 @@
+{
+    "notices":   [
+       {
+         "id" : 1,
+         "name": "Jan Kowalski",
+         "email": "jan.kowalski@gmail.com",
+         "description": "Lorem ipsum ndon lectus tincidunt. Etiam dictum ligula sed arcu mollis fringilla. ",
+         "tags": ["front-end", "back-end"],
+         "courses": ["Projekt zespołowy", "Projektowanie interfejsów webowych"],
+         "img" :  "https://i.picsum.photos/id/809/70/100.jpg?hmac=cWnStMkn7WNzRq0PTDWocjmFv3Kc3_oB6O2f5EW4dZw"
+       },
+       {
+         "id" : 2,
+         "name": "Jan Wolski",
+         "email": "jan.wolski@gmail.com",
+         "description": "Lorem ipsum nxon lectus tincidunt. Etiam dictum ligula sed arcu mollis fringilla. ",
+         "tags": ["front-end", "back-end", "database"],
+         "courses": ["Bazy danych 2", "Projektowanie interfejsów webowych"],
+         "img" :  "https://i.picsum.photos/id/718/70/100.jpg?hmac=RCE5M3cCYhrCPqrw_2fx5pOGZob8rrj1jFe_0EFhqa8"
+       },
+       {
+         "id" : 3,
+         "name": "Jutland",
+         "email": "jutland@gmail.com",
+         "description": "Lorem ipsum nzon lectus tincidunt. Etiam dictum ligula sed arcu mollis fringilla. ",
+         "tags": ["sieci komputerowe", "cisco", "#niechcemisie"],
+         "courses": ["Sieci komputerowe", "kurs od 0 do projektowania sieci"],
+         "img" :  "https://i.picsum.photos/id/614/70/100.jpg?hmac=reTX69fX-TWOgNb-xZG3rmHsuSjJzJGfPi8qpiPJ8hk"
+       }
+     ],
+     "groupNotices": [
+       {
+           "id" : 1,
+           "groupName": "Wojownicy",
+           "people": [
+                     { "name": "Zbychu", "email": "dupa@gmail.com"}, 
+                     { "name":"Krzesiwo", "email": "krzak@gmail.com"},
+                     { "name":"Warzone", "email": "kitku@gmail.com"}
+                   ],
+           "course": "Magiczne zwierzaki",
+           "description": "Lorem ipsumc non lectus tincidunt. Etiam dictum ligula sed arcu mollis fringilla. "
+           
+       },
+       {   
+           "id" : 2,
+           "groupName": "Buzdygan",
+           "people": [
+                     { "name": "Krzemień", "email": "dupa@gmail.com"}, 
+                     { "name": "Waldo", "email": "waldo@gmail.com"},
+                     { "name": "kilkutron", "email": "dupa@gmail.com"}
+                   ],
+           "course": "Projekt zespołowy",
+           "description": "Lorsem ipsum non lectus tincidunt. Etiam dictum ligula sed arcu mollis fringilla. "
+       }
+     ]
+   }
