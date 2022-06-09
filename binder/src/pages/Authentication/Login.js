@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import {  loginUser } from '../../api/fetchData';
 import { useContext, useEffect } from 'react';
 import { UserContext } from "../../context/Contex";
-import { logInWithGoogle, logInWithEmailAndPwd } from '../../firebase/users';
+import { logInWithGoogle, logInWithEmailAndPwd, logInWithGithub } from '../../firebase/users';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from '../../firebase/init';
 import { useState } from 'react';
@@ -72,6 +72,7 @@ const Login = () =>{
                             <div className="content-center" style={{"display": "flex", "flexDirection": "column"}}>
                                 <button className="btn  btn-success" type="submit" onClick={onSubmit}> Zaloguj się </button>
                                 <button className='btn btn-secondary' onClick={logInWithGoogle}> Zaloguj sie google'em </button>
+                                <button className='btn btn-secondary' coClick={logInWithGithub}>Zaloguj sie GitHubem</button>
                             </div>
                                 
                             <div className='text-center fs-6' >

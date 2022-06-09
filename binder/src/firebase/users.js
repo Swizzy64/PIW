@@ -1,6 +1,7 @@
 import { auth, firestore } from "./init";
 import {
     GoogleAuthProvider,
+    GithubAuthProvider,
     signInWithPopup,
     signOut,
     createUserWithEmailAndPassword,
@@ -34,6 +35,32 @@ export const logInWithGoogle = async () => {
         alert(err.message);
     }
 };
+
+const githubProvider = new GithubAuthProvider();
+
+export const logInWithGithub = async () => {
+    try {
+        const response = await signInWithPopup(auth, githubProvider);
+
+        const user = response.user;
+        const q = doc(firestore, "users", user.uid);
+        const docs = await getDoc(q);
+
+        // automatyczna rejestracja
+        if ( ! docs.exists()) {
+            await setDoc(q, {
+                name: user.displayName,
+                authProvider: "github",
+                email: user.email
+            });
+        }
+
+    } catch (err) {
+        console.error({err});
+        alert(err.message);
+    }
+};
+
 export const logInWithEmailAndPwd = async (email, password) =>{
    return signInWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
